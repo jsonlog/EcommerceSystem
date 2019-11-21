@@ -120,9 +120,9 @@ public class ItemServiceImpl implements ItemService {
 			if(item.getBrand()!=null && item.getBrand().length()>0){
 				criteria.andBrandLike("%"+item.getBrand()+"%");
 			}
-			if(item.getSpec()!=null && item.getSpec().length()>0){
-				criteria.andSpecLike("%"+item.getSpec()+"%");
-			}
+			//if(item.getSpec()!=null && item.getSpec().length()>0){
+			//	criteria.andSpecLike("%"+item.getSpec()+"%");
+			//}
 			if(item.getSeller()!=null && item.getSeller().length()>0){
 				criteria.andSellerLike("%"+item.getSeller()+"%");
 			}

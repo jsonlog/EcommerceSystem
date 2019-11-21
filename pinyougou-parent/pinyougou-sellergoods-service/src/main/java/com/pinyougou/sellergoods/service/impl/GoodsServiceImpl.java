@@ -1,8 +1,10 @@
 package com.pinyougou.sellergoods.service.impl;
 import java.util.Date;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import org.apache.solr.common.util.Hash;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -99,6 +101,7 @@ public class GoodsServiceImpl implements GoodsService {
 				// item.setTitle(title);
 				String title = goods.getGoods().getGoodsName();
 				Map<String,String> map = JSON.parseObject(item.getSpec(), Map.class);
+				//Map<String,String> map = item.getSpec();
 				for (String key : map.keySet()) {
 					title+= " "+map.get(key);
 				}
@@ -122,7 +125,7 @@ public class GoodsServiceImpl implements GoodsService {
 			
 			item.setIsDefault("1");
 			item.setSpec("{}");
-			
+			//item.setSpec(new HashMap());
 			setValue(goods,item);
 			itemMapper.insert(item);
 		}
