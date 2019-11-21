@@ -1,0 +1,8 @@
+db.student.save({{name:"孙悟空",sex:"男",age:30,address:"花果山水帘洞"});
+db.student.save({{name:"猪八戒",sex:"男",age:28,address:"高老庄旅游度假村"});
+db.student.save({{name:"沙和尚",sex:"男",age:25,address:"流沙河路11号"});
+db.student.save({name:"唐僧",sex:"男",age:35,address:"东土大唐"});
+db.student.save({name:"白骨精",sex:"女",age:18,address:"白骨洞"});
+db.student.save({name:"白龙马",sex:"男",age:20,address:"西海"});
+db.student.save({name:"哪吒",sex:"男",age:15,address:"莲花湾小区"});
+db.student.save({_id:1,name:"红孩儿",sex:"男",age:16,address:"火云洞"});
