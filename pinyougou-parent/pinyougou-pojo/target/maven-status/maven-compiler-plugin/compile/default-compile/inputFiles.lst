@@ -1,4 +1,5 @@
 D:\pinyougou_bigdata1\pinyougou-parent\pinyougou-pojo\src\main\java\com\pinyougou\pojo\TbAreasExample.java
+D:\pinyougou_bigdata1\pinyougou-parent\pinyougou-pojo\src\main\java\entity\Result.java
 D:\pinyougou_bigdata1\pinyougou-parent\pinyougou-pojo\src\main\java\com\pinyougou\pojo\TbTypeTemplate.java
 D:\pinyougou_bigdata1\pinyougou-parent\pinyougou-pojo\src\main\java\com\pinyougou\pojo\TbCitiesExample.java
 D:\pinyougou_bigdata1\pinyougou-parent\pinyougou-pojo\src\main\java\com\pinyougou\pojo\TbItemCat.java
@@ -8,8 +9,8 @@ D:\pinyougou_bigdata1\pinyougou-parent\pinyougou-pojo\src\main\java\com\pinyougo
 D:\pinyougou_bigdata1\pinyougou-parent\pinyougou-pojo\src\main\java\com\pinyougou\pojo\TbOrder.java
 D:\pinyougou_bigdata1\pinyougou-parent\pinyougou-pojo\src\main\java\com\pinyougou\pojo\TbSpecificationOption.java
 D:\pinyougou_bigdata1\pinyougou-parent\pinyougou-pojo\src\main\java\com\pinyougou\pojo\TbContentCategory.java
-D:\pinyougou_bigdata1\pinyougou-parent\pinyougou-pojo\src\main\java\com\pinyougou\pojo\TbItemCatExample.java
 D:\pinyougou_bigdata1\pinyougou-parent\pinyougou-pojo\src\main\java\com\pinyougou\pojo\TbItemExample.java
+D:\pinyougou_bigdata1\pinyougou-parent\pinyougou-pojo\src\main\java\com\pinyougou\pojo\TbItemCatExample.java
 D:\pinyougou_bigdata1\pinyougou-parent\pinyougou-pojo\src\main\java\com\pinyougou\pojo\TbGoods.java
 D:\pinyougou_bigdata1\pinyougou-parent\pinyougou-pojo\src\main\java\com\pinyougou\pojo\TbOrderExample.java
 D:\pinyougou_bigdata1\pinyougou-parent\pinyougou-pojo\src\main\java\com\pinyougou\pojo\TbGoodsDesc.java
@@ -22,6 +23,7 @@ D:\pinyougou_bigdata1\pinyougou-parent\pinyougou-pojo\src\main\java\com\pinyougo
 D:\pinyougou_bigdata1\pinyougou-parent\pinyougou-pojo\src\main\java\com\pinyougou\pojo\TbAddress.java
 D:\pinyougou_bigdata1\pinyougou-parent\pinyougou-pojo\src\main\java\com\pinyougou\pojo\TbSpecification.java
 D:\pinyougou_bigdata1\pinyougou-parent\pinyougou-pojo\src\main\java\com\pinyougou\pojo\TbTypeTemplateExample.java
+D:\pinyougou_bigdata1\pinyougou-parent\pinyougou-pojo\src\main\java\entity\PageResult.java
 D:\pinyougou_bigdata1\pinyougou-parent\pinyougou-pojo\src\main\java\com\pinyougou\pojo\TbAddressExample.java
 D:\pinyougou_bigdata1\pinyougou-parent\pinyougou-pojo\src\main\java\com\pinyougou\pojo\TbContentExample.java
 D:\pinyougou_bigdata1\pinyougou-parent\pinyougou-pojo\src\main\java\com\pinyougou\pojo\TbFreightTemplateExample.java
