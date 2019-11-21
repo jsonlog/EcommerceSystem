@@ -213,6 +213,8 @@ public class SeckillOrderServiceImpl implements SeckillOrderService {
 			if(seckillGoods!=null){ //如果不为空
 				seckillGoods.setStockCount(seckillGoods.getStockCount()+1);
 				redisTemplate.boundHashOps("seckillGoods").put(seckillOrder.getSeckillId(), seckillGoods);
+				
+				
 			}else{
 				seckillGoods=new TbSeckillGoods();
 				seckillGoods.setId(seckillOrder.getSeckillId());
