@@ -12,9 +12,11 @@ D:\pinyougou_bigdata2\pinyougou-parent\pinyougou-dao\src\main\java\com\pinyougou
 D:\pinyougou_bigdata2\pinyougou-parent\pinyougou-dao\src\main\java\com\pinyougou\mapper\TbContentMapper.java
 D:\pinyougou_bigdata2\pinyougou-parent\pinyougou-dao\src\main\java\com\pinyougou\mapper\TbItemMapper.java
 D:\pinyougou_bigdata2\pinyougou-parent\pinyougou-dao\src\main\java\com\pinyougou\mapper\TbSellerMapper.java
+D:\pinyougou_bigdata2\pinyougou-parent\pinyougou-dao\src\main\java\com\pinyougou\mapper\TbSeckillOrderMapper.java
 D:\pinyougou_bigdata2\pinyougou-parent\pinyougou-dao\src\main\java\com\pinyougou\mapper\TbTypeTemplateMapper.java
 D:\pinyougou_bigdata2\pinyougou-parent\pinyougou-dao\src\main\java\com\pinyougou\mapper\TbOrderMapper.java
 D:\pinyougou_bigdata2\pinyougou-parent\pinyougou-dao\src\main\java\com\pinyougou\mapper\TbSpecificationOptionMapper.java
+D:\pinyougou_bigdata2\pinyougou-parent\pinyougou-dao\src\main\java\com\pinyougou\mapper\TbSeckillGoodsMapper.java
 D:\pinyougou_bigdata2\pinyougou-parent\pinyougou-dao\src\main\java\com\pinyougou\mapper\TbSpecificationMapper.java
 D:\pinyougou_bigdata2\pinyougou-parent\pinyougou-dao\src\main\java\com\pinyougou\mapper\TbUserMapper.java
 D:\pinyougou_bigdata2\pinyougou-parent\pinyougou-dao\src\main\java\com\pinyougou\mapper\TbContentCategoryMapper.java
