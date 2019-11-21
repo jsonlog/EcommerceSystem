@@ -3,8 +3,6 @@ import java.util.List;
 import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.transaction.annotation.Transactional;
-
 import com.alibaba.dubbo.config.annotation.Service;
 import com.alibaba.fastjson.JSON;
 import com.github.pagehelper.Page;
@@ -26,7 +24,6 @@ import entity.PageResult;
  *
  */
 @Service
-@Transactional
 public class TypeTemplateServiceImpl implements TypeTemplateService {
 
 	@Autowired
@@ -114,30 +111,31 @@ public class TypeTemplateServiceImpl implements TypeTemplateService {
 		Page<TbTypeTemplate> page= (Page<TbTypeTemplate>)typeTemplateMapper.selectByExample(example);		
 		return new PageResult(page.getTotal(), page.getResult());
 	}
-
-	@Autowired
-	private TbSpecificationOptionMapper specificationOptionMapper;
 		
-	@Override
-	public List<Map> findSpecList(Long id) {
-		//查询模板
-		TbTypeTemplate typeTemplate = typeTemplateMapper.selectByPrimaryKey(id);
+		@Autowired
+		private TbSpecificationOptionMapper specificationOptionMapper ;
 		
-		List<Map> list = JSON.parseArray(typeTemplate.getSpecIds(), Map.class)  ;
-		
-		for(Map map:list){
+		@Override
+		public List<Map> findSpecList(Long id) {
+			//根据ID查询到模板对象
+			TbTypeTemplate typeTemplate = typeTemplateMapper.selectByPrimaryKey(id);
+			// 获得规格的数据spec_ids
+			String specIds = typeTemplate.getSpecIds();// [{"id":27,"text":"网络"},{"id":32,"text":"机身内存"}]
+			// 将specIds的字符串转成JSON的List<Map>
+			List<Map> list = JSON.parseArray(specIds, Map.class);
+			// 获得每条记录:
+			for (Map map : list) {
+				// 根据规格的ID 查询规格选项的数据:
+				// 设置查询条件:
+				TbSpecificationOptionExample example = new TbSpecificationOptionExample();
+				com.pinyougou.pojo.TbSpecificationOptionExample.Criteria criteria = example.createCriteria();
+				criteria.andSpecIdEqualTo(new Long((Integer)map.get("id")));
+				
+				List<TbSpecificationOption> specOptionList = specificationOptionMapper.selectByExample(example);
 			
-			//查询规格选项列表
-			TbSpecificationOptionExample example=new TbSpecificationOptionExample();
-			com.pinyougou.pojo.TbSpecificationOptionExample.Criteria criteria = example.createCriteria();
-			criteria.andSpecIdEqualTo( new Long( (Integer)map.get("id") ) );
-			List<TbSpecificationOption> options = specificationOptionMapper.selectByExample(example);
-			
-			map.put("options", options);
+				map.put("options", specOptionList);//{"id":27,"text":"网络",options:[{id：xxx,optionName:移动2G}]}
+			}
+			return list;
 		}
-		
-		return list;
-	}
-
-
+	
 }
