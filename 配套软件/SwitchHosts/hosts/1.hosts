@@ -1,0 +1,15 @@
+#@SwitchHosts! {"url": null, "icon_idx": 0, "title": "\u7535\u5546\u6d4b\u8bd5"}
+# 电商测试
+172.16.0.161 svn.jmall.itcast.local
+172.16.0.225 pay.pinyougou.com
+172.16.0.225 cart.pinyougou.com
+172.16.0.225 item.pinyougou.com
+172.16.0.225 order.pinyougou.com
+172.16.0.225 manager.pinyougou.com
+172.16.0.225 search.pinyougou.com
+172.16.0.225 seller.pinyougou.com
+172.16.0.225 passport.pinyougou.com
+172.16.0.225 www.pinyougou.com
+172.16.0.225 pinyougou.com
+172.16.0.225 click.pinyougou.com
+172.16.0.225 img.pinyougou.com

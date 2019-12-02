@@ -1,0 +1,25 @@
+java.lang.NullPointerException
+	at ui.DatabaseUtil$5.run(DatabaseUtil.java:361)
+	at java.lang.Thread.run(Unknown Source)
+java.lang.NullPointerException
+	at templet.ClientTempletUtil.showAllFiles(ClientTempletUtil.java:45)
+	at templet.ClientTempletUtil.getTempletList(ClientTempletUtil.java:30)
+	at templet.Code.create(Code.java:37)
+	at ui.CodeUtil$6.run(CodeUtil.java:474)
+	at java.lang.Thread.run(Unknown Source)
+java.lang.NullPointerException
+	at templet.ClientTempletUtil.showAllFiles(ClientTempletUtil.java:45)
+	at templet.ClientTempletUtil.getTempletList(ClientTempletUtil.java:30)
+	at templet.Code.create(Code.java:38)
+	at ui.CodeUtil$6.run(CodeUtil.java:474)
+	at java.lang.Thread.run(Unknown Source)
+java.lang.NullPointerException
+	at templet.TempletUtil.showAllFiles(TempletUtil.java:36)
+	at templet.TempletUtil.getTempletList(TempletUtil.java:23)
+	at templet.Code.create(Code.java:39)
+	at ui.CodeUtil$6.run(CodeUtil.java:474)
+	at java.lang.Thread.run(Unknown Source)
+java.lang.NullPointerException
+	at templet.Code.create(Code.java:41)
+	at ui.CodeUtil$6.run(CodeUtil.java:474)
+	at java.lang.Thread.run(Unknown Source)
